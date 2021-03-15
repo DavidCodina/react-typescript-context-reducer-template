@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React   from 'react';
+import Counter from './components/Counter';
+import Numbers from './components/Numbers';
 import './App.css';
 
-function App() {
+
+/* =============================================================================
+
+============================================================================= */
+
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="py-5">
+      <div className="container-fluid px-md-5">
+        <h2 className="text-white-3d mb-5 text-center">React / Typescript + Context / Reducer</h2>
+
+        <br />
+        <Counter />
+        <Numbers />
+
+
+        <div className="horizontal-ruler">
+          <hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+          <hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+          <hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+        </div>
+
+        <p className="w-90 mx-auto">This demo implements a single React Context with multiple reducers.</p>
+
+      </div>
+    </main>
   );
 }
+
 
 export default App;
